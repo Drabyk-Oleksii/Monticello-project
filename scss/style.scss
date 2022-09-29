@@ -1,0 +1,12 @@
+@import "variables";
+@import "header";
+@import "what_we_do";
+@import "latest_news";
+@import "gallery";
+@import "footer";
+body{
+  font-family: Montserrat;
+}
+body._active{
+  overflow: hidden;
+}

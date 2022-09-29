@@ -1,0 +1,237 @@
+.section_latest_news{
+  background: url("../img/Background.jpg") 0 0/cover no-repeat;;
+  width: 100%;
+  height: 978px;
+  margin: 0 auto;
+}
+.top_border_white{
+  display: flex;
+  justify-content: center;
+  & div {
+    width: 100px;
+    border-top: 1px solid white;
+    margin-top: 120px;
+    margin-bottom: 25px;
+  }
+}
+.latest_news_title{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  margin-bottom: 85px;
+}
+.slider_second{
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+.slider_second .slick-list{
+  overflow: hidden;
+}
+.slider_second .slick-dots li{
+  list-style: none;
+  margin: 8px 20px;
+}
+.slider_second .slick-dots button{
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin-bottom: 30px;
+}
+.slider_second .slick_item_second{
+  width: 370px;
+  height: 514px;
+  background: white;
+  margin: 0 15px;
+}
+.slider_second .slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.slider_second .slick-arrow{
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  width: 10px;
+  height: 16px;
+  font-size: 0;
+}
+.slider_second .slick-arrow.slick-prev{
+  left: -78px;
+  background: url("../img/svg/arrow_left.svg")0 0/auto 100% no-repeat;
+}
+.slider_second .slick-arrow.slick-next{
+  right: -78px;
+  background: url("../img/svg/arrow_right.svg")0 0/auto 100% no-repeat;
+ }
+.slider_second .slick-arrow.slick-next:before{
+  content: '';
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: -15px;
+}
+.slider_second .slick-arrow.slick-prev:before{
+  content: '';
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: -11px;
+  left: -15px;
+}
+.second_slider_img{
+  width: 100%;
+  height: 49%;
+}
+.slick_item_second h4{
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 24px 0 15px 20px;
+}
+.slick_item_second p{
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.slick-active button{
+  background: white;
+}
+.wrapper .slider .slick-dots .slick-active button{
+  background: white;
+}
+.slick-dots .slick-active button{
+  background: white;
+}
+.people_img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.author_block{
+  display: flex;
+  margin-top: 40px;
+}
+.alja_brun{
+  margin-top: 20px;
+}
+
+.author_block div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.author_name{
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+.author_date{
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0em;
+  color: #55B7FF;
+}
+.news_description{
+  padding: 0 20px 0 20px;
+}
+@media screen and (max-width:$ht){
+  .slider_second{
+    width: 70%;
+  }
+  .slick_item_second{
+    height: 40vw;
+    position: relative;
+  }
+  .second_slider_img{
+    height: 45%;
+    min-height: 250px;
+  }
+  .author_block{
+    position: absolute;
+    bottom: 10px;
+  }
+}
+@media screen and (max-width:$md){
+  .section_latest_news{
+    height: 73vh;
+  }
+  .top_border_white div{
+    display: none;
+    }
+  .latest_news_title{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .slick_item{
+    width: 250px;
+  }
+  .slider_second{
+    width: 55%;
+  }
+  }
+@media screen and (max-width:$dc) {
+  .latest_news_title {
+    font-size: 30px;
+  }
+  .slick_item_second h4 {
+    font-size: 3vw;
+  }
+  .slick_item_second p {
+    font-size: 2.5vw;
+  }
+  .second_slider_img {
+    height: 30%;
+  }
+  .slick_item {
+    height: 400px;
+    width: 80%;
+  }
+  .slider_second .slick-arrow.slick-next {
+    right: -40px;
+  }
+  .slider_second .slick-arrow.slick-prev {
+    left: -40px;
+  }
+  .slider_second .slick_item_second {
+    height: 78vw;
+  }
+  .slick_item_second h4 {
+    padding: 0 10px 0 20px;
+    margin: 10px auto 0;
+  }
+  .author_block {
+    display: none;
+  }
+  .second_slider_img {
+    height: 50%;
+    min-height: 0;
+  }
+  .section_latest_news {
+    height: 130vw;
+  }
+}
+
+
+
+
+

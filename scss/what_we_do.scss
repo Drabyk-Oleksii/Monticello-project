@@ -1,0 +1,194 @@
+.top_border{
+  display: flex;
+  justify-content: center;
+}
+.section_whatWeDo{
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.top_border div{
+  width: 100px;
+  border-top: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+.wwd_title{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  display: flex;
+  justify-content: center;
+}
+.wwd_first_block{
+  display: flex;
+  margin-top: 90px;
+}
+.wwd_first_image{
+  height: 470px;
+  width: 585px;
+  background: #55B7FF;
+  position: relative;
+}
+.what_we_do_first_img{
+  position: absolute;
+  left: 215px;
+  top: 57px;
+  height: 100%;
+  width: 628px;
+}
+.wwd_first_information_block{
+  margin-left: 330px;
+  margin-top: 153px;
+}
+.wwd_second_information_block{
+  margin-top: 178px;
+  margin-right: 330px;
+}
+.one_world{
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.trade_center{
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.trade_center_description{
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 470px;
+}
+.trade_center_button{
+  width: 190px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  color: black;
+  &:hover{
+    transition: all 2s;
+    background: black;
+    color: white;
+  }
+}
+.trade_center_location{
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.wwd_second_block{
+  display: flex;
+  margin-top: 130px;
+  justify-content: flex-end;
+  margin-bottom: 183px;
+}
+.wwd_second_image{
+  height: 470px;
+  width: 585px;
+  background: #7E5AFF;
+  position: relative;
+  margin-top: 25px;
+}
+.what_we_do_second_img{
+  position: absolute;
+  right: 215px;
+  top: 57px;
+  height: 100%;
+  width: 628px;
+}
+.button_block:hover{
+    transition: all 2s;
+    background: black;
+    color: white;
+  }
+
+@media screen and (max-width:$ht){
+  .wwd_first_block,.wwd_second_block{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px ;
+  }
+  .wwd_first_information_block,.wwd_second_information_block{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .what_we_do_first_img,.what_we_do_second_img{
+    top: 0;
+    left: 0;
+    height: 35vw;
+    width: 43vw;
+  }
+  .wwd_first_image,.wwd_second_image{
+    background: white;
+    height: 35vw;
+    width: 43vw;
+  }
+  .one_world{
+    font-size: 1.6vw;
+  }
+  .trade_center{
+    font-size: 25px
+  }
+  .trade_center_description{
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width:$md){
+  .wwd_first_block,.wwd_second_block{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wwd_first_information_block,.wwd_second_information_block{
+    align-items: center;
+    padding-top: 15px;
+  }
+  .trade_center_description{
+    text-align: center;
+    font-size: 15px;
+  }
+  .wwd_second_information_block{
+    order: 2;
+  }
+  .wwd_first_information_block{
+    order: 1;
+  }
+  .trade_center_button{
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width:$dc){
+  .wwd_title{
+    font-size: 30px;
+  }
+  .trade_center_description{
+    width: 70%;
+  }
+  .trade_center_button{
+    width: 150px;
+  }
+  .trade_center_location{
+    font-size: 1.6vw;
+  }
+}
